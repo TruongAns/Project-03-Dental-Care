@@ -571,3 +571,49 @@ a {
 .team__control-next-icon {
     rotate: 180deg;
 }
+
+/* ============================================= Install =============================================*/
+
+.install {
+    margin-top: 265px;
+
+}
+
+.install__inner {
+    position: relative;
+    border-radius: 4px;
+    background: #2E80CE;
+    display: flex;
+    padding: 76px 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.install__content {
+    color: #FFF !important;
+    width: 57%;
+    flex-shrink: 0;
+}
+
+.install__img {
+    position: absolute;
+    bottom: 0;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+}
+
+.install__heading,
+.install__desc {
+    color: #fff;
+}
+
+.install__heading {
+    max-width: 489px;
+}
+
+.install__row {
+    display: flex;
+    column-gap: 28px;
+    margin-top: 38px;
+}
