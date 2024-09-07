@@ -63,7 +63,7 @@ a {
 .section-desc {
     margin-top: 18px;
     color: #575F66;
-    font-size: 1.8re, ;
+    font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.66;
     /* 166.667% */
@@ -420,4 +420,56 @@ a {
     line-height: 1.75;
     /* 175% */
     transition: 0.25s;
+}
+
+/* ============================================= About =============================================*/
+
+.about {
+    padding: 170px 135px;
+}
+
+.about__inner {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__media {
+    width: 49%;
+    /* width: 570px; */
+    flex-shrink: 0;
+}
+
+.about__content {
+    width: 40%;
+    flex-shrink: 0;
+}
+
+.about__images {
+    position: relative;
+    /* display: flex; */
+    padding-bottom: 121px;
+}
+
+.about__img {
+    width: 512px;
+    height: 370px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+
+.about__img:last-child {
+    width: 332px;
+    height: 370px;
+    position: absolute;
+    right: 0;
+    /* top: 121px; */
+    bottom: 0;
+}
+
+.about-btn__cta {
+    display: inline-block;
+    margin-top: 38px;
 }
