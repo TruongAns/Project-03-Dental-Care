@@ -4,6 +4,8 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
+
 }
 
 body {
@@ -106,15 +108,18 @@ a {
 
 /*----------------------------------------- Header -----------------------------------------*/
 .header {
-    padding-top: 30px;
-    min-height: 100vh;
+    min-height: calc(100vh);
     background: var(--header-bg);
+    padding-top: 130px;
+    margin-bottom: 85px;
 }
 
 .logo {
     font-size: 1rem;
     position: relative;
     display: inline-flex;
+    font-family: "Sora", sans-serif;
+
 }
 
 
@@ -163,6 +168,16 @@ a {
 }
 
 /* Header top */
+
+.header-to-wrap {
+    position: sticky;
+    top: -22px;
+    z-index: 100;
+    background: var(--header-bg);
+    /* background: orange; */
+    padding: 30px 0px 8px;
+}
+
 .header-top {
     display: flex;
     justify-content: space-between;
@@ -219,7 +234,7 @@ a {
 .hero {
     display: flex;
     align-items: center;
-    margin-top: 76px;
+
 }
 
 .hero__content {
@@ -297,7 +312,8 @@ a {
 /* Service */
 
 .service {
-    padding: 170px 0;
+    /* padding: 170px 0; */
+    padding: 85px 0;
 }
 
 .service__heading,
@@ -391,6 +407,7 @@ a {
 /* ============================================= Work =============================================*/
 
 .work {
+    margin-top: 85px;
     padding: 100px 0px;
     background: #F6FBFF;
 }
@@ -460,7 +477,7 @@ a {
 /* ============================================= About =============================================*/
 
 .about {
-    padding: 170px 135px;
+    padding: 170px 135px 85px;
 }
 
 .about__inner {
@@ -513,6 +530,7 @@ a {
 /* ============================================= Team =============================================*/
 
 .team {
+    padding-top: 85px;
     text-align: center;
 
 }
@@ -775,4 +793,143 @@ a {
 .btn-appointment {
     display: inline-block;
     margin-top: 38px;
+}
+
+/* ============================================= Footer =============================================*/
+.footer {
+    background: #10375C;
+    padding: 100px 0 42px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer__row {
+    display: block;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    column-gap: 70px;
+    padding-bottom: 28px;
+}
+
+.footer__inner::after {
+    display: block;
+    content: "";
+    width: 1170px;
+    height: 1px;
+    background: #406181;
+}
+
+.footer__desc {
+    margin-top: 21px;
+    color: #A9B3BB;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    /* 175% */
+}
+
+.footer__desc--col1 {
+    max-width: 336px;
+}
+
+.footer__desc--col4 {
+    max-width: 273px;
+    font-size: 1.4rem;
+}
+
+.footer__heading {
+
+    color: #FFF;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75;
+    /* 175% */
+}
+
+.footer__heading:nth-of-type(2) {
+    margin-top: 28px;
+}
+
+.footer__list {
+    margin-top: 20px;
+}
+
+.footer__link {
+    display: block;
+    margin-top: 10px;
+    color: #A9B3BB;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    /* 185.714% */
+}
+
+
+.footer__socials {
+    margin-top: 20px;
+    display: flex;
+    column-gap: 10px;
+}
+
+.footer__social-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    color: #3F81D1;
+}
+
+.footer__social-btn:hover {
+    background: #3F81D1;
+    color: #fff;
+}
+
+.footer__form {
+    margin-top: 10px;
+    display: flex;
+    column-gap: 12px;
+}
+
+.footer__form-input {
+    padding: 10px;
+    width: 212px;
+    height: 46px;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    background: transparent;
+
+    color: #9CA8B1;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    /* 185.714% */
+}
+
+.footer__submit {
+
+    padding: 0;
+    min-width: 108px;
+    height: 46px;
+    border-radius: 4px;
+    background: #2E80CE;
+    font-family: "Open Sans";
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.85;
+    flex-shrink: 0;
+    /* 185.714% */
+}
+
+.footer__copyright {
+    margin-top: 28px;
+    color: #AAB3BA;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    /* 185.714% */
 }
