@@ -356,7 +356,7 @@ a {
 /* ============================================= Work =============================================*/
 
 .work {
-    padding: 100px 135px;
+    padding: 100px 0px;
     background: #F6FBFF;
 }
 
@@ -472,4 +472,102 @@ a {
 .about-btn__cta {
     display: inline-block;
     margin-top: 38px;
+}
+
+
+/* ============================================= Team =============================================*/
+
+.team {
+    text-align: center;
+
+}
+
+.team__cta {
+    margin-top: 38px;
+}
+
+.team__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 34px;
+    margin-top: 70px;
+}
+
+.team-item:hover .team-item__img {
+    transform: scale(1.1);
+}
+
+.team-item__img-bg {
+    position: relative;
+    width: 270px;
+    height: 318px;
+    border-radius: 6px;
+    background: #EAF6FF;
+}
+
+.team-item__img {
+    max-width: 100%;
+    height: 290px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 0.25s;
+}
+
+.team-item__name {
+    margin-top: 12px;
+    color: #10375C;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    /* 175% */
+}
+
+.team-item__desc {
+    color: #575F66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.85;
+    /* 185.714% */
+}
+
+/* Team control */
+.team__control {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+    column-gap: 18px;
+}
+
+
+.member__control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575F66;
+    outline: none;
+    background: #fff;
+    color: #575F66;
+    transition: 0.25s;
+}
+
+.member__control-btn:hover {
+    border: 1px solid #2E80CE;
+    background: #2E80CE;
+    color: #fff;
+    cursor: pointer;
+}
+
+.team__control-next-icon {
+    rotate: 180deg;
 }
