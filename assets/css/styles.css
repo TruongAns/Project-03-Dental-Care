@@ -864,6 +864,10 @@ a {
     /* 185.714% */
 }
 
+.footer__link:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: #fff;
+}
 
 .footer__socials {
     margin-top: 20px;
